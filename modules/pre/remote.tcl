@@ -24,7 +24,7 @@ proc ::dZSbot::Modules::Pre::Remote::Fetch {query {type ""}} {
 
     set endpoint [::dZSbot::Config::Get pre.remote.endpoint "https://api.predb.net/"]
     set timeout [::dZSbot::Config::Get pre.remote.timeout_ms 10000]
-    set userAgent [::dZSbot::Config::Get pre.remote.user_agent "dZSbot/2.0 ( https://github.com/Khazaztroph/dZSbot )"]
+    set userAgent [::dZSbot::Config::Get pre.remote.user_agent "dZSbot/2.0 ( https://github.com/Mainfr4m3/dZSbot )"]
     set params {}
 
     if {[string trim $query] ne ""} {
