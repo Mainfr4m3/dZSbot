@@ -28,7 +28,7 @@ proc ::dZSbot::Modules::Music::LastFm::Fetch {query {format ""}} {
     set endpoint [::dZSbot::Config::Get lastfm.endpoint "https://ws.audioscrobbler.com/2.0/"]
     set limit [::dZSbot::Config::Get lastfm.limit 1]
     set timeout [::dZSbot::Config::Get lastfm.timeout_ms 15000]
-    set userAgent [::dZSbot::Config::Get lastfm.user_agent "dZSbot/2.0 +https://github.com/Khazaztroph/dZSbot"]
+    set userAgent [::dZSbot::Config::Get lastfm.user_agent "dZSbot/2.0 +https://github.com/Mainfr4m3/dZSbot"]
     set params [list method album.search album $query api_key $apiKey format json limit $limit]
     set url "${endpoint}?[::http::formatQuery {*}$params]"
 

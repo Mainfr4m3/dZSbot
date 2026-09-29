@@ -79,7 +79,7 @@ proc ::dZSbot::UpdateCheck::Fetch {} {
     }
 
     set endpoint [::dZSbot::Config::Get update_check.endpoint \
-        "https://api.github.com/repos/Khazaztroph/dZSbot/releases/latest"]
+        "https://api.github.com/repos/Mainfr4m3/dZSbot/releases/latest"]
     set timeout [::dZSbot::Config::Get update_check.timeout_ms 10000]
     set userAgent "dZSbot/$::dZSbot::Version"
     set token ""

@@ -28,7 +28,7 @@ proc ::dZSbot::Modules::Music::MusicBrainz::Fetch {query {format ""}} {
     set endpoint [::dZSbot::Config::Get musicbrainz.endpoint "https://musicbrainz.org/ws/2/release/"]
     set limit [::dZSbot::Config::Get musicbrainz.limit 1]
     set timeout [::dZSbot::Config::Get musicbrainz.timeout_ms 15000]
-    set userAgent [::dZSbot::Config::Get musicbrainz.user_agent "dZSbot/2.0 ( https://github.com/Khazaztroph/dZSbot )"]
+    set userAgent [::dZSbot::Config::Get musicbrainz.user_agent "dZSbot/2.0 ( https://github.com/Mainfr4m3/dZSbot )"]
     set params [list query $query fmt json limit $limit]
     set url "${endpoint}?[::http::formatQuery {*}$params]"
 
